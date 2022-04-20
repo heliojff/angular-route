@@ -1,0 +1,22 @@
+<h1>Página de Lista clientes cadastrados</h1>
+
+<table cellspacing="22">
+  <thead>
+    <tr>
+      <td></td>
+      <td>Usuário</td>
+      <td>Email</td>
+      <td></td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of userList; index as i">
+      <td>{{ i + 1 }}</td>
+      <td>{{ user.username }}</td>
+      <td>{{ user.email }}</td>
+      <td>
+        <button (click)="showDetails(user)">Detalhes</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

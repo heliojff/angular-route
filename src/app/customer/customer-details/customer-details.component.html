@@ -1,0 +1,21 @@
+<h1>Página de Detalhes do cliente</h1>
+
+<div class="avatar" *ngIf="userInfo.avatar">
+  <img [src]="userInfo.avatar" width="300" height="300" alt="Foto" loading="lazy">
+</div>
+
+<table cellspacing="22">
+  <thead>
+    <tr>
+      <td>Nome</td>
+      <td>Telefone</td>
+      <td></td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{ userInfo.first_name }}</td>
+      <td>{{ userInfo.phone_number }}</td>
+    </tr>
+  </tbody>
+</table>
